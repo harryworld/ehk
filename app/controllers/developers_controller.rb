@@ -1,5 +1,6 @@
 class DevelopersController < ApplicationController
   before_action :set_developer, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!
 
   # GET /developers
   # GET /developers.json
